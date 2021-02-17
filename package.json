@@ -1,0 +1,15 @@
+{
+  "name": "punker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Will Sokolowski <will.sokolowski@gmail.com> (https://github.com/Sokos6)",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/network": "^0.4.3"
+  }
+}
