@@ -67,6 +67,17 @@ const Hero = ({
     }
   };
 
+  // if (window.ethereum != null) {
+  //   state.web3 = new Web3(window.ethereum);
+  //   try {
+  //     // Request account access if needed
+  //     window.ethereum.enable();
+  //     // Acccounts now exposed
+  //   } catch (error) {
+  //     // User denied account access...
+  //   }
+  // }
+
   const requestAccess = useCallback(() => requestAuth(web3Context), []);
 
   return (
@@ -99,7 +110,7 @@ const Hero = ({
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup onClick={requestAccess}>
                   <Button
-                    onClick={(requestAccess, console.log('CLICK'))}
+                    onClick={requestAccess}
                     tag="a"
                     color="primary"
                     wideMobile
